@@ -17,6 +17,7 @@ const request = async (url) => {
         $template.querySelector("img").setAttribute("src", `https://placeimg.com/200/200/${element.name}`);
         $template.querySelector("img").setAttribute("alt", element.name.toUpperCase());
         $template.querySelector("span").setAttribute("class", `a${index}`);
+        $template.querySelector("button").setAttribute("class", `bton a${index}`);
         
 
         if(element.stock === 0){
@@ -73,8 +74,9 @@ const request = async (url) => {
                 document.querySelector(".conteiner-price h3 span").textContent = parseInt(pagar) + desired.unit_price;
 
             }else{
-                document.querySelector(`figcaption .a${index}`).textContent += ' / Agotado';
-                alert("no hay stock");
+                const text = document.querySelector(`figcaption .a${index}`).textContent;
+                document.querySelector(`figcaption .a${index}`).textContent = `${text} / Agotado`;
+                document.querySelector(`button.a${index}`).disabled = true;
             }
         });
     });
