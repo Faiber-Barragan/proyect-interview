@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #13508F;
+    z-index: 10;
+}
+
+header .header-bton{
+    width: 20%;
+}
+
+header .header-bton bton{
+    width: 100%;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    align-items: center;    
+}
+
+.logo img{
+    width: 100%;
+}
+
+.stock{
+    margin-top: 85px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bton{
+    padding: 4px;
+    cursor: pointer;
+}
+
+.bton .icon{
+    width: 20px;
+    height: 20px;
+}
+
+.cards{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+}
+
+
+figcaption{
+    display: flex;
+    justify-content: space-evenly;
+    word-break:break-all;
+    background-color: #246ebde7;
+    padding: 1rem;
+    color: white;
+}
+
+figcaption button{
+    padding: 4px;
+}
+
+td{
+    background-color: #E7D9DF;
+}
+
+.pedido{
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    left: -130%;
+    max-height: 100vh;
+    background-color: #13508F;
+    overflow: auto;
+    transition: left 500ms;
+    
+}
+
+.mostrar{
+    left: 0;
+    position: fixed;
+    transition: all 500ms;
+}
+
+.cart{
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.table-conteiner{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+table{
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+    border: solid 1px black;
+	padding: 8px;
+    text-align: center;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+/* tr:nth-child(even){
+	background-color: #ddd;
+} */
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+
+.conteiner-price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px
+}
+
+.conteiner-price .bton{
+    color: white;
+    background-color: #246355;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    background-color: #333333;
+}

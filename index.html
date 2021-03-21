@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alternova</title>
+    <link rel="icon" type="image/x-icon" href="styles/img/icon.png" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="/styles/img/cropped-logo-Alternova.png">
+            </div>
+            <div class="header-bton">
+                <button class="bton">
+                    <img class="icon" src="/styles/img/carrito-de-compras.svg">
+                    <span id="torre">0</span>
+                </button>
+            </div>        
+        </div>
+    </header>
+    
+    <div class="section-conteiner">
+        <section class="stock">
+            <div class="cards">
+                         
+                    <template id="template-card">
+                         
+                            <figure class="card">
+                                <img>
+                                <figcaption>
+                                    <span></span>
+                                        <button class="bton">                                           
+                                            <img class="icon" src="/styles/img/add-to-cart.svg">                                            
+                                        </button>
+                                </figcaption>
+                            </figure>
+                        
+                    </template>
+                
+            </div>
+        </section>
+    
+        <section class="pedido">
+            <div class="cart">
+                <h2>Carta</h2>
+                <div class="table-conteiner">
+                    <table>
+                        <thead>
+                            <th>Product</th><th>Quantity</th><th>Unit price</th><th>Total price</th>
+                        </thead>
+                        
+                        <template id="temple-lines">
+                            <tr>
+                                <td class="one"></td><td class="two"></td><td class="three"></td><td class="four"></td>
+                            </tr>
+                        </template>
+                    </table>
+                </div>
+                
+                <div class="conteiner-price">
+                    <h3>Total order price: <span>0$</span></h3>
+                    <button class="bton">CREATE ORDER</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        Alternova Shop
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

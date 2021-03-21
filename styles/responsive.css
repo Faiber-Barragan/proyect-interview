@@ -1,0 +1,36 @@
+@media (min-width: 900px){
+    .logo {
+        width: 20%;
+    }
+
+    .header-bton{
+        display: none;
+    }
+
+    .stock{
+        margin: 0;
+        width: 70%;
+    }
+    
+    .section-conteiner{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        margin-top: 85px;
+        /* position: relative; */
+    }
+    
+
+    .pedido{
+        position: fixed;
+        width: 30%;
+        top: 92px;
+        right: 100px;
+        left: unset;
+        /* max-height: unset; */
+        /* position: fixed; */
+        
+    }
+
+}
